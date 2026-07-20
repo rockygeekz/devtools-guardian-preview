@@ -42,7 +42,7 @@ jobs:
           python3 /tmp/team-devtools/.agents/skills/td-supply-chain-audit/scripts/analyze.py \
             --cache-dir "$CACHE_DIR"
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GUARDIAN_GH_TOKEN }}
 
       - name: Convert audit to dashboard format
         run: |
